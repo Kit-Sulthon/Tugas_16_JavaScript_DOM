@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+        <meta charset="utf-8" />
+        <title>Tugas46 Javascript - NIOMIC</title>
+ </head>
+ <body>
+    <p>Click untuk mengubah warna</p>
+    <button onclick="Tugas46()">Ubah Warna</button>
+
+       <script type="text/javascript">
+        function Tugas46() {
+            // Meminta untuk ganti warna di prompt
+            var gantiWarna = prompt("Ketikan Warna yang kamu inginkan","");
+            // Memeriksa jika prompt kosong atau tidak
+            if (gantiWarna !== null && gantiWarna !== "") {
+                // Mengubah Warna latar belakang sesuai prompt
+                document.body.style.backgroundColor = gantiWarna;
+            }        
+        }
+       </script>
+ </body>
+</html>
